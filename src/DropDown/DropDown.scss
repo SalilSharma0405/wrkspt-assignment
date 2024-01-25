@@ -1,0 +1,37 @@
+.dropdownList{
+    padding: 8px;
+    border-bottom: 1px solid black;
+
+    &:last-child{
+        border: none;
+    }
+
+    &:hover{
+        background: #dcdcdc;
+        cursor: pointer;
+    }
+}
+
+.dropdownListMain{
+    position: relative;
+}
+
+.dropdownInput{
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 6px;
+    color: black;
+    outline: none;
+    
+    &::placeholder{
+        color: gray;
+    }
+}
+
+.dropdownListWrapper{
+    border: 2px solid gray;
+    position: absolute;
+    width: 150px;
+    background: #fff;
+}
+

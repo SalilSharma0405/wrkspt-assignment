@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
+import Header from './Header/Header';
+import Table from './Table/Table';
+
+
 import './App.css';
 
+
+const defaultState = {
+  countryName: '',
+  population: ''
+}
+
 function App() {
+const [state, setState] = useState(defaultState);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setState={setState}/>
+      <Table state={state}/>
     </div>
   );
 }

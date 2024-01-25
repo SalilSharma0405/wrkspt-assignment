@@ -1,0 +1,32 @@
+.tableMain {
+    width: 100%;
+
+    border: 2px solid gray;
+    border-collapse: collapse;
+
+
+    th {
+        border: 2px solid gray;
+        border-collapse: collapse;
+        font-weight: bold;
+        padding: 4px 4px 4px 4px;
+        text-align: left;
+    }
+
+    td {
+        border: 2px solid gray;
+        border-collapse: collapse;
+        padding: 4px 4px 4px 4px;
+
+    }
+
+    .noData{
+        border: none;
+    }
+
+}
+
+
+.tableContainer{
+    margin-top: 24px;
+}
